@@ -44,8 +44,11 @@ npm install
 npx tsc
 
 ' Step 3: Run the compiled JavaScript files
+
+```typescript
 node logger-singleton.js
 node logger-without-singleton.js
+```
 
 ## Comparison: With vs Without Singleton
 
