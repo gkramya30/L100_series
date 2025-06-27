@@ -28,12 +28,13 @@ In this pattern, an object (prototype) provides a method to clone itself, enabli
 ├── tsconfig.json
 └── README.md
 ```
-### 5️⃣ Comparison: With vs Without Prototype Pattern
+
+### 5️. Comparison: With vs Without Prototype Pattern
 
 ✅ **Using Prototype Pattern (`CarWithPrototype.ts`)**
 
 - Objects are cloned using a built-in `clone()` method.
-- Efficient and clean way to duplicate objects with the same properties.
+- An efficient and clean way to duplicate objects with the same properties.
 - Reduces boilerplate and prevents errors from manual copying.
 - Useful for creating many similar objects quickly.
 
@@ -43,12 +44,12 @@ const car2 = car1.clone();
 console.log(car1 === car2); // false, but properties are copied
 ```
 
-❌ Without Prototype Pattern (CarWithoutPrototype.ts)
+### ❌ **Without Prototype Pattern** (`CarWithoutPrototype.ts`)
 
-Objects are manually copied by reassigning each property.
-More verbose and error-prone, especially with many properties.
-Manual copying can lead to inconsistencies if a property is missed.
-Less maintainable and scalable as complexity grows.
+- Objects are manually copied by reassigning each property.
+- More verbose and error-prone, especially with many properties.
+- Manual copying can lead to inconsistencies if a property is missed.
+- Less maintainable and scalable as complexity grows.
 
 ```ts
 const car1 = new Car("Toyota", "Red");
