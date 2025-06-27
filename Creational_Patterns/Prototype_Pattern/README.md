@@ -29,6 +29,23 @@ In this pattern, an object (prototype) provides a method to clone itself, enabli
 └── README.md
 ```
 
+## 4. How to Run
+
+ Step 1: Install dependencies (if using a package.json)
+```typescript
+npm install
+```
+ Step 2: Compile TypeScript files
+```typescript
+npx tsc
+```
+ Step 3: Run the compiled JavaScript files
+
+```typescript
+node logger-singleton.js
+node logger-without-singleton.js
+```
+
 ### 5️. Comparison: With vs Without Prototype Pattern
 
 ✅ **Using Prototype Pattern (`CarWithPrototype.ts`)**
