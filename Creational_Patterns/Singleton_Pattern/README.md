@@ -34,6 +34,7 @@ singleton-pattern/
 ├── package.json # Node project config
 └── README.md # Project documentation
 
+```
 ## How to Run
 
 ' Step 1: Install dependencies (if using a package.json)
