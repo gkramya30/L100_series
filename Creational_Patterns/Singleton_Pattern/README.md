@@ -47,7 +47,7 @@ npx tsc
 node logger-singleton.js
 node logger-without-singleton.js
 
-## **Comparison: With vs Without Singleton**
+## Comparison: With vs Without Singleton
 
 ### ✅ Using Singleton (`logger-singleton.ts`)
 
@@ -60,6 +60,7 @@ const logger1 = SingletonLogger.getInstance();
 const logger2 = SingletonLogger.getInstance();
 
 console.log(logger1 === logger2);
+```
 
 ### ❌ Without Singleton (`logger-without-singleton.ts`)
 
