@@ -37,15 +37,15 @@ singleton-pattern/
 ```
 ## How to Run
 
-' Step 1: Install dependencies (if using a package.json)
+ Step 1: Install dependencies (if using a package.json)
 ```typescript
 npm install
 ```
-' Step 2: Compile TypeScript files
+ Step 2: Compile TypeScript files
 ```typescript
 npx tsc
 ```
-' Step 3: Run the compiled JavaScript files
+ Step 3: Run the compiled JavaScript files
 
 ```typescript
 node logger-singleton.js
