@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const AudioSystem_1 = require("./AudioSystem");
+const Projector_1 = require("./Projector");
+const Screen_1 = require("./Screen");
+const MoviePlayer_1 = require("./MoviePlayer");
+const HomeTheaterFacade_1 = require("./HomeTheaterFacade");
+const audio = new AudioSystem_1.AudioSystem();
+const projector = new Projector_1.Projector();
+const screen = new Screen_1.Screen();
+const player = new MoviePlayer_1.MoviePlayer();
+const homeTheater = new HomeTheaterFacade_1.HomeTheaterFacade(audio, projector, screen, player);
+homeTheater.watchMovie("Inception");
+homeTheater.endMovie();

@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const EmailChannel_1 = require("./channels/EmailChannel");
+const SMSChannel_1 = require("./channels/SMSChannel");
+const UrgentNotification_1 = require("./notifications/UrgentNotification");
+const PromotionalNotification_1 = require("./notifications/PromotionalNotification");
+const email = new EmailChannel_1.EmailChannel();
+const sms = new SMSChannel_1.SMSChannel();
+const urgentViaEmail = new UrgentNotification_1.UrgentNotification(email);
+urgentViaEmail.notify("Server is down!");
+const promoViaSMS = new PromotionalNotification_1.PromotionalNotification(sms);
+promoViaSMS.notify("Buy 1 Get 1 Free Offer!");

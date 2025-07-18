@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const InternetProxy_1 = require("./InternetProxy");
+const employeeProxy = new InternetProxy_1.InternetProxy("employee");
+const adminProxy = new InternetProxy_1.InternetProxy("admin");
+console.log("Employee trying to access:");
+employeeProxy.connectTo("learn.com");
+employeeProxy.connectTo("games.com");
+console.log("\nAdmin trying to access:");
+adminProxy.connectTo("social.com");
