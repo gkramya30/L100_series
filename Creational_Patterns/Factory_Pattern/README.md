@@ -33,7 +33,7 @@ factory-pattern/
 ├── tsconfig.json                    # TypeScript config file
 ├── package.json                     # Node project config
 └── README.md                        # Project documentation
-```vbnet
+---
 
 Comparison: With vs Without Factory
 ✅ Using Factory (shape-factory-pattern.ts)
