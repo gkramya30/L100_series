@@ -34,7 +34,8 @@ factory-pattern/
 ├── package.json                     # Node project config
 └── README.md                        # Project documentation
 ```
-Comparison: With vs Without Factory
+ ### Comparison: With vs Without Factory
+
 ✅ Using Factory (shape-factory-pattern.ts)
 
 Centralized object creation logic
