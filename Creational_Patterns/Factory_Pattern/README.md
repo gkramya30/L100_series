@@ -33,8 +33,7 @@ factory-pattern/
 ├── tsconfig.json                    # TypeScript config file
 ├── package.json                     # Node project config
 └── README.md                        # Project documentation
----
-
+```
 Comparison: With vs Without Factory
 ✅ Using Factory (shape-factory-pattern.ts)
 
@@ -43,7 +42,7 @@ Centralized object creation logic
 Easier to manage and extend (e.g., adding new shapes)
 
 Reduces code duplication
-```json
+```typescript
 
 const shape1 = ShapeFactory.getShape("circle");
 shape1?.draw();
@@ -53,7 +52,7 @@ shape2?.draw();
 
 const shape3 = ShapeFactory.getShape("triangle");
 if (!shape3) console.log("Unknown shape requested");
-```json
+```
 
 ❌ Without Factory (shape-without-factory.ts)
 
@@ -63,11 +62,11 @@ Harder to maintain when new types are added
 
 Increases coupling between client code and implementations
 
-```json
+```typescript
 
 const circle = new Circle();
 const square = new Square();
 
 circle.draw();
 square.draw();
-```json
+```
