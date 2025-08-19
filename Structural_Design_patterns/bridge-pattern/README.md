@@ -1,6 +1,6 @@
 # 🌉 Bridge Pattern in TypeScript
 
-This repository demonstrates the **Bridge Design Pattern** in TypeScript using a device and remote control example. It shows the difference between using a bridge to decouple abstraction from implementation versus tightly binding them together.
+This repository demonstrates the **Bridge Design Pattern** in TypeScript. It shows the difference between using a bridge to decouple abstraction from implementation versus tightly binding them together.
 
 ---
 
@@ -36,7 +36,7 @@ Using the Bridge pattern provides several benefits:
 ### ❌ Without Bridge
 
 - Each remote is tightly coupled to a specific device  
-- Requires separate classes for each combination (e.g., `TVRemote`, `RadioRemote`)  
+- Requires separate classes for each combination 
 - Harder to extend when new devices or remotes are added  
 
 ---
