@@ -1,6 +1,6 @@
 # 🪶 Flyweight Pattern in TypeScript
 
-This repository demonstrates the **Flyweight Design Pattern** in TypeScript using a shape example. It shows how to share common state among multiple objects to reduce memory usage.
+This repository demonstrates the **Flyweight Design Pattern** in TypeScript using a tree example. It shows how to share common state among multiple objects to reduce memory usage.
 
 ---
 
