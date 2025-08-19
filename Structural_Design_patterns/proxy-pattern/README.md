@@ -1,6 +1,6 @@
 # 🛡️ Proxy Pattern in TypeScript
 
-This repository demonstrates the **Proxy Design Pattern** in TypeScript using an image loading example. It shows how a proxy object can control access to another object.
+This repository demonstrates the **Proxy Design Pattern** in TypeScript . It shows how a proxy object can control access to another object.
 
 ---
 
