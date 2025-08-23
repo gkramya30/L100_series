@@ -22,6 +22,22 @@ Using the Decorator pattern provides several benefits:
 - ✅ Allows combining multiple behaviors in a **layered way**  
 
 ---
+## How to Run
+
+ Step 1: Install dependencies (if using a package.json)
+```typescript
+npm install
+```
+ Step 2: Compile TypeScript files
+```typescript
+npx tsc
+```
+ Step 3: Run the compiled JavaScript files
+
+```typescript
+node with-decorator.js
+node without-decorator.js
+```
 
 ## Comparison: With vs Without Decorator
 
