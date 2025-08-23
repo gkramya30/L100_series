@@ -33,6 +33,22 @@ builder-pattern/
 ├── package.json                     # Node project config
 └── README.md                        # Project documentation
 ```
+## How to Run
+
+ Step 1: Install dependencies (if using a package.json)
+```typescript
+npm install
+```
+ Step 2: Compile TypeScript files
+```typescript
+npx tsc
+```
+ Step 3: Run the compiled JavaScript files
+
+```typescript
+node builder-pattern.js
+node without-builder.js
+```
 
 ### Comparison: With vs Without Builder
 
