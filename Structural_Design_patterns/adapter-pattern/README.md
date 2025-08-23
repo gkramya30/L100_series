@@ -21,6 +21,22 @@ Using the Adapter pattern provides several benefits:
 - ✅ Encourages **loose coupling** between client and implementation  
 
 ---
+## How to Run
+
+ Step 1: Install dependencies (if using a package.json)
+```typescript
+npm install
+```
+ Step 2: Compile TypeScript files
+```typescript
+npx tsc
+```
+ Step 3: Run the compiled JavaScript files
+
+```typescript
+node with-adapter.js
+node without-adapter.js
+```
 ### Comparison: With vs Without Adapter
 
 ✅ Using Adapter (with-adapter.ts)
