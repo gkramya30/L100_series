@@ -33,6 +33,8 @@ npx tsc
  Step 3: Run the compiled JavaScript files
 
 ```typescript
+node dist/with-strategy.js
+node dist/without-strategy.js
 ```
 ### Comparison: With vs Without Strategy
 
@@ -53,6 +55,4 @@ Behavior is baked into the context using conditionals (e.g., if-else or switch s
 Changing or adding behaviors requires modifying context logic.
 
 Leads to code that is harder to test, maintain, and extend.
-node dist/with-strategy.js
-node dist/without-strategy.js
-```
+
