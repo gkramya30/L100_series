@@ -34,6 +34,23 @@ factory-pattern/
 ├── package.json                     # Node project config
 └── README.md                        # Project documentation
 ```
+
+## How to Run
+
+ Step 1: Install dependencies (if using a package.json)
+```typescript
+npm install
+```
+ Step 2: Compile TypeScript files
+```typescript
+npx tsc
+```
+ Step 3: Run the compiled JavaScript files
+
+```typescript
+node shape-factory.js
+node shape-without-factory.js
+```
  ### Comparison: With vs Without Factory
 
 ✅ Using Factory (shape-factory-pattern.ts)
