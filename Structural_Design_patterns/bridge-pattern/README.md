@@ -22,6 +22,22 @@ Using the Bridge pattern provides several benefits:
 - ✅ Encourages **composition over inheritance**  
 
 ---
+## How to Run
+
+ Step 1: Install dependencies (if using a package.json)
+```typescript
+npm install
+```
+ Step 2: Compile TypeScript files
+```typescript
+npx tsc
+```
+ Step 3: Run the compiled JavaScript files
+
+```typescript
+node with-bridge.js
+node without-bridge.js
+```
 
 ## Comparison: With vs Without Bridge
 
