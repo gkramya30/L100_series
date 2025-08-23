@@ -42,8 +42,8 @@ npx tsc
  Step 3: Run the compiled JavaScript files
 
 ```typescript
-node logger-singleton.js
-node logger-without-singleton.js
+node with-prototype.js
+node without-prototype.js
 ```
 
 ### 5️. Comparison: With vs Without Prototype Pattern
