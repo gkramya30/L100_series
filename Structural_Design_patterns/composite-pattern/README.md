@@ -22,7 +22,22 @@ Using the Composite pattern provides several benefits:
 - ✅ Improves flexibility by allowing new components to be added without changing existing code  
 
 ---
+## How to Run
 
+ Step 1: Install dependencies (if using a package.json)
+```typescript
+npm install
+```
+ Step 2: Compile TypeScript files
+```typescript
+npx tsc
+```
+ Step 3: Run the compiled JavaScript files
+
+```typescript
+node with-composite.js
+node without-composite.js
+```
 ## Comparison: With vs Without Composite
 
 ### ✅ Using Composite
