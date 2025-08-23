@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var User_1 = require("./User");
+var alice = new User_1.User("Alice");
+var bob = new User_1.User("Bob");
+var charlie = new User_1.User("Charlie");
+alice.addContact(bob);
+bob.addContact(charlie);
+charlie.addContact(alice);
+alice.send("Bob", "Hi Bob!");
+bob.send("Charlie", "Hello Charlie!");

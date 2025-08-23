@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var WeatherStation_1 = require("./WeatherStation");
+var DisplayDevice_1 = require("./DisplayDevice");
+var station = new WeatherStation_1.WeatherStation();
+var app = new DisplayDevice_1.MobileApp();
+var watch = new DisplayDevice_1.SmartWatch();
+station.addObserver(app);
+station.addObserver(watch);
+station.setTemperature(25);
+station.setTemperature(30);

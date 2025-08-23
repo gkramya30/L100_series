@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var SupportService_1 = require("./SupportService");
+var Ticket_1 = require("./Ticket");
+var support = new SupportService_1.SupportService();
+var ticket1 = new Ticket_1.SupportTicket("Password reset", 1);
+var ticket2 = new Ticket_1.SupportTicket("App not loading", 2);
+var ticket3 = new Ticket_1.SupportTicket("Critical security issue", 4);
+support.handle(ticket1);
+support.handle(ticket2);
+support.handle(ticket3);

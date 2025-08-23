@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Navigator_1 = require("./Navigator");
+var Strategy_1 = require("./Strategy");
+var navigator = new Navigator_1.Navigator(new Strategy_1.DrivingStrategy());
+navigator.navigate("Home", "Work");
+navigator.setStrategy(new Strategy_1.WalkingStrategy());
+navigator.navigate("Home", "Park");
+navigator.setStrategy(new Strategy_1.CyclingStrategy());
+navigator.navigate("Home", "Gym");

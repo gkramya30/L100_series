@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var ChatRoom_1 = require("./ChatRoom");
+var chatRoom = new ChatRoom_1.ChatRoom();
+var alice = new ChatRoom_1.User("Alice");
+var bob = new ChatRoom_1.User("Bob");
+var charlie = new ChatRoom_1.User("Charlie");
+chatRoom.registerUser(alice);
+chatRoom.registerUser(bob);
+chatRoom.registerUser(charlie);
+alice.send("Bob", "Hi Bob!");
+bob.send("Charlie", "Hello Charlie!");
