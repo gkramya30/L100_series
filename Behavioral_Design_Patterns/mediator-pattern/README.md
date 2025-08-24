@@ -39,7 +39,7 @@ node dist/without-mediator.js
 ```
 ### Comparison: With vs Without Mediator
 
-Using Mediator
+#### Using Mediator
 
 Components interact only with the mediator, not directly with each other.
 
@@ -49,7 +49,7 @@ Adding or modifying components doesn't require changes in other components.
 
 Enhances modularity and scalability.
 
-Without Mediator
+#### Without Mediator
 
 Components need direct references to each other, leading to tangled dependencies.
 
