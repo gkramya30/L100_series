@@ -7,7 +7,7 @@ This repository demonstrates the **Visitor Design Pattern** in TypeScript using 
 ## What is the Visitor Pattern?
 
 The **Visitor Pattern** is a **Behavioral Design Pattern** that separates algorithms from the objects on which they operate by moving these operations into "visitor" classes.  
-This allows you to add new operations without modifying the object structure. ([refactoring.guru](https://refactoring.guru/design-patterns/visitor), [en.wikipedia.org/w/index.php?search=Visitor+pattern](https://en.wikipedia.org/wiki/Visitor_pattern))
+This allows you to add new operations without modifying the object structure. 
 
 ---
 
