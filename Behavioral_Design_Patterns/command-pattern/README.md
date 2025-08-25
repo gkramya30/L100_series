@@ -34,8 +34,8 @@ npx tsc
  Step 3: Run the compiled JavaScript files
 
 ```typescript
-node dist/with-command.js
-node dist/without-command.js
+node client.js
+node client.js
 ```
 ### Comparison: With vs Without Command Pattern
 
