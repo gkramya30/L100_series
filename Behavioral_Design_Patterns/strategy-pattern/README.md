@@ -33,8 +33,8 @@ npx tsc
  Step 3: Run the compiled JavaScript files
 
 ```typescript
-node dist/with-strategy.js
-node dist/without-strategy.js
+node client.js
+node client.js
 ```
 ### Comparison: With vs Without Strategy
 
