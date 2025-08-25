@@ -6,7 +6,7 @@ This repository demonstrates the **Iterator Design Pattern** in TypeScript using
 
 ## What is the Iterator Pattern?
 
-The **Iterator Pattern** is a **Behavioral Design Pattern** that provides a way to access elements of an aggregate object (*e.g.*, a list or array) sequentially **without exposing its internal representation** :contentReference[oaicite:0]{index=0}.
+The **Iterator Pattern** is a **Behavioral Design Pattern** that provides a way to access elements of an aggregate object (*e.g.*, a list or array) sequentially **without exposing its internal representation** 
 
 ---
 
@@ -14,9 +14,9 @@ The **Iterator Pattern** is a **Behavioral Design Pattern** that provides a way 
 
 Adopting the Iterator pattern offers several benefits:
 
--  **Decouples traversal logic from collection structure**, making data access consistent across different collection types :contentReference[oaicite:1]{index=1}.  
--  Supports **multiple traversal strategies** (e.g., forward, backward, or custom orders) without altering the collection interface :contentReference[oaicite:2]{index=2}.  
--  Enhances **code readability and reuse**, providing a clean abstraction for collection iteration :contentReference[oaicite:3]{index=3}.
+-  **Decouples traversal logic from collection structure**, making data access consistent across different collection types.  
+-  Supports **multiple traversal strategies** (e.g., forward, backward, or custom orders) without altering the collection interface {index=2}.  
+-  Enhances **code readability and reuse**, providing a clean abstraction for collection iteration.
 
 ---
 ## How to Run
