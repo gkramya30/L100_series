@@ -35,8 +35,8 @@ npx tsc
  Step 3: Run the compiled JavaScript files
 
 ```typescript
-node with-facade.js
-node without-facade.js
+node client.js
+node client.js
 ```
 
 ## Comparison: With vs Without Facade
