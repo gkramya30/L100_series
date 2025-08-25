@@ -6,7 +6,7 @@ This repository showcases the **State Design Pattern** in TypeScript using a sce
 
 ## What is the State Pattern?
 
-The **State Pattern** is a **Behavioral Design Pattern** that allows an object to change its behavior when its internal state changes—making the object appear to change its class. It encapsulates state-specific behavior into separate classes and delegates actions to the current state object :contentReference[oaicite:0]{index=0}.
+The **State Pattern** is a **Behavioral Design Pattern** that allows an object to change its behavior when its internal state changes—making the object appear to change its class. It encapsulates state-specific behavior into separate classes and delegates actions to the current state object.
 
 ---
 
@@ -14,10 +14,10 @@ The **State Pattern** is a **Behavioral Design Pattern** that allows an object t
 
 Key benefits of using the State Pattern:
 
--  **Eliminates large conditional statements** by encapsulating behavioral differences in concrete state classes :contentReference[oaicite:1]{index=1}.
--  **Organizes state-specific logic** within dedicated classes, improving code readability and maintenance :contentReference[oaicite:2]{index=2}.
--  **Enables dynamic behavior changes at runtime**, as the context object transitions between states :contentReference[oaicite:3]{index=3}.
--  **Facilitates easy addition of new states** without modifying existing codebase :contentReference[oaicite:4]{index=4}.
+-  **Eliminates large conditional statements** by encapsulating behavioral differences in concrete state classes.
+-  **Organizes state-specific logic** within dedicated classes, improving code readability and maintenance.
+-  **Enables dynamic behavior changes at runtime**, as the context object transitions between states.
+-  **Facilitates easy addition of new states** without modifying the existing codebase.
 
 ---
 ## How to Run
@@ -33,10 +33,11 @@ npx tsc
  Step 3: Run the compiled JavaScript files
 
 ```typescript
-node dist/with-state.js
-node dist/without-state.js
+node client.js
+node client.js
 ```
 ### Comparison: With vs Without State Pattern
+
 #### With State Pattern
 
 Behavior is encapsulated in separate state classes, each handling state-specific logic.
