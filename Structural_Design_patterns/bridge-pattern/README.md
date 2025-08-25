@@ -35,8 +35,8 @@ npx tsc
  Step 3: Run the compiled JavaScript files
 
 ```typescript
-node with-bridge.js
-node without-bridge.js
+node client.js
+node client.js
 ```
 
 ## Comparison: With vs Without Bridge
