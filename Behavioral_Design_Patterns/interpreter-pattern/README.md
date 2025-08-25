@@ -6,7 +6,7 @@ This repository demonstrates the **Interpreter Design Pattern** in TypeScript us
 
 ## What is the Interpreter Pattern?
 
-The **Interpreter Pattern** is a **Behavioral Design Pattern** that defines a language's grammar and provides an interpreter to process statements in that language. It represents each rule or symbol in the language grammar as a class, allowing complex expressions to be interpreted via a recursive structure :contentReference[oaicite:0]{index=0}.
+The **Interpreter Pattern** is a **Behavioral Design Pattern** that defines a language's grammar and provides an interpreter to process statements in that language. It represents each rule or symbol in the language grammar as a class, allowing complex expressions to be interpreted via a recursive structure :contentReference
 
 ---
 
@@ -14,9 +14,9 @@ The **Interpreter Pattern** is a **Behavioral Design Pattern** that defines a la
 
 The Interpreter pattern offers several valuable benefits:
 
--  It allows you to **represent a grammar using a class hierarchy** (e.g., terminal and non-terminal expressions) and evaluate expressions systematically :contentReference[oaicite:1]{index=1}.
--  The expression structure forms a **recursive composition (AST)** that the interpreter can traverse to evaluate complex sentences :contentReference[oaicite:2]{index=2}.
--  It’s ideal for applications like **calculators**, **rule engines**, **configuration file parsers**, or **domain-specific languages (DSLs)** where expressions need parsing and evaluation :contentReference[oaicite:3]{index=3}.
+-  It allows you to **represent a grammar using a class hierarchy** (e.g., terminal and non-terminal expressions) and evaluate expressions systematically 
+-  The expression structure forms a **recursive composition (AST)** that the interpreter can traverse to evaluate complex sentences
+-  It’s ideal for applications like **calculators**, **rule engines**, **configuration file parsers**, or **domain-specific languages (DSLs)** where expressions need parsing and evaluation :contentReference
 
 ---
 ## How to Run
@@ -32,8 +32,8 @@ npx tsc
  Step 3: Run the compiled JavaScript files
 
 ```typescript
-node dist/with-interpreter.js
-node dist/without-interpreter.js
+node client.js
+node client.js
 ```
 ### Comparison: With vs Without Interpreter
 
