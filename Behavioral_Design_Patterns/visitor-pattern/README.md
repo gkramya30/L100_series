@@ -35,11 +35,12 @@ npx tsc
  Step 3: Run the compiled JavaScript files
 
 ```typescript
-node dist/with-visitor.js
-node dist/without-visitor.js
+node client.js
+node client.js
 ```
 
 ### Comparison: With vs Without Visitor Pattern
+
 #### Using Visitor Pattern
 
 Operations are encapsulated in visitor classes, not in the element classes.
