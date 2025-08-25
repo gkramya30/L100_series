@@ -1,24 +1,27 @@
-# ​ Mediator Pattern in TypeScript
+#  Memento Pattern in TypeScript
 
-This repository demonstrates the **Mediator Design Pattern** in TypeScript using a component communication example. It shows how a mediator centralizes interactions between objects, promoting loose coupling and clearer communication flows.
+This repository demonstrates the **Memento Design Pattern** in TypeScript using a practical example. It shows how to capture and restore an object’s state without violating encapsulation principles.
 
 ---
 
-## What is the Mediator Pattern?
+## What is the Memento Pattern?
 
-The **Mediator Pattern** is a **Behavioral Design Pattern** that encapsulates how a set of objects interact by introducing a mediator object between them.  
-Instead of communicating directly, objects send messages via the mediator—simplifying and centralizing their interactions.:contentReference[oaicite:0]{index=0}
+The **Memento Pattern** is a **Behavioral Design Pattern** that allows you to externally save and restore an object's internal state without exposing its internal details. It involves three core components:
+
+- **Originator**: The object whose state needs to be saved and restored.  
+- **Memento**: A snapshot of the originator's state at a point in time.  
+- **Caretaker**: Manages memento(s), preserving them and restoring the originator when needed.
 
 ---
 
 ## How is It Useful in Coding?
 
-Using the Mediator pattern offers several key benefits:
+Using the Memento pattern provides several key benefits:
 
-- ✅ **Reduces coupling** between components—objects don’t need to know about each other, only the mediator.:contentReference[oaicite:1]{index=1}  
-- ✅ **Centralizes communication logic**, making the system easier to understand and modify.:contentReference[oaicite:2]{index=2}  
-- ✅ Promotes **modularity and maintainability**—components can be added or removed without changing others.:contentReference[oaicite:3]{index=3}  
-- ✅ Ideal for systems with complex interactions (e.g., chat rooms, GUI management, air traffic control).:contentReference[oaicite:4]{index=4}
+-  **Supports undo and rollback functionality**, enabling users to revert changes.  
+-  **Encapsulates object state**, maintaining encapsulation and integrity.  
+-  **Decouples state storage from object logic**, promoting clean design separation.  
+-  **Supports state versioning and restoration**, useful in editors, games, and transaction systems.
 
 ---
 ## How to Run
@@ -34,23 +37,25 @@ npx tsc
  Step 3: Run the compiled JavaScript files
 
 ```typescript
-node dist/with-memento.js
-node dist/without-memento.js
+node client.js
+node client.js
 ```
-### Comparison: With vs Without Mediator
+### Comparison: With vs Without Memento Pattern
 
-#### Using Mediator
+#### Using Memento Pattern
 
-Components communicate only via the mediator, not directly.
+The Originator can save its state in a memento and restore from it later.
 
-All interaction logic is centralized, making the flow easier to control.
+Care Taker keeps track of mementos and manages state restoration.
 
-Components remain independent and easier to extend or refactor.
+Behavior is cleanly separated from state storage, preserving encapsulation.
 
-#### Without Mediator
+Adds powerful undo/rollback capabilities with minimal intrusion into business logic.
 
-Components must know about each other directly, resulting in tight coupling.
+#### Without Memento Pattern
 
-Communication logic becomes scattered and hard to manage.
+Objects must expose internal data or manually handle all state changes, violating encapsulation.
 
-Introducing changes or new interactions requires touching many parts of the system.
+Undo/rollback logic gets tangled with the core class code, increasing complexity.
+
+Harder to manage saved states and maintain clear separation—introducing fragile or bloated designs.
