@@ -46,8 +46,8 @@ npx tsc
  Step 3: Run the compiled JavaScript files
 
 ```typescript
-node dist/with-chain.js
-node dist/without-chain.js
+node client.js
+node client.js
 ```
 ### Comparison: With vs Without Chain of Responsibility
 
