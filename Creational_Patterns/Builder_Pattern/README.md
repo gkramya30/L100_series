@@ -44,9 +44,9 @@ npx tsc
  Step 3: Run the compiled JavaScript files
 
 ```typescript
-Creational_Patterns\Builder_Pattern\builder-pattern
+cd Creational_Patterns\Builder_Pattern\builder-pattern
 node builder-pattern.js
-Creational_Patterns\Builder_Pattern\without-builder-pattern
+cd Creational_Patterns\Builder_Pattern\without-builder-pattern
 node without-builder.js
 ```
 
