@@ -16,7 +16,7 @@ The Interpreter pattern offers several valuable benefits:
 
 -  It allows you to **represent a grammar using a class hierarchy** (e.g., terminal and non-terminal expressions) and evaluate expressions systematically 
 -  The expression structure forms a **recursive composition (AST)** that the interpreter can traverse to evaluate complex sentences
--  It’s ideal for applications like **calculators**, **rule engines**, **configuration file parsers**, or **domain-specific languages (DSLs)** where expressions need parsing and evaluation :contentReference
+-  It’s ideal for applications like **calculators**, **rule engines**, **configuration file parsers**, or **domain-specific languages (DSLs)** where expressions need parsing and evaluation 
 
 ---
 ## How to Run
