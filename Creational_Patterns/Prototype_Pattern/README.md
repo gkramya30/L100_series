@@ -56,11 +56,6 @@ node without-prototype.js
 - Reduces boilerplate and prevents errors from manual copying.
 - Useful for creating many similar objects quickly.
 
-```ts
-const car1 = new Car("Honda", "Blue");
-const car2 = car1.clone();
-console.log(car1 === car2); // false, but properties are copied
-```
 
 ### ❌ **Without Prototype Pattern** (`CarWithoutPrototype.ts`)
 
@@ -69,8 +64,4 @@ console.log(car1 === car2); // false, but properties are copied
 - Manual copying can lead to inconsistencies if a property is missed.
 - Less maintainable and scalable as complexity grows.
 
-```ts
-const car1 = new Car("Toyota", "Red");
-const car2 = new Car(car1.brand, car1.color);
-console.log(car1 === car2); // false, manual copy
-```
+
