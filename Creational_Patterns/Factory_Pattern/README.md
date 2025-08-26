@@ -62,17 +62,6 @@ Centralized object creation logic
 Easier to manage and extend (e.g., adding new shapes)
 
 Reduces code duplication
-```typescript
-
-const shape1 = ShapeFactory.getShape("circle");
-shape1?.draw();
-
-const shape2 = ShapeFactory.getShape("square");
-shape2?.draw();
-
-const shape3 = ShapeFactory.getShape("triangle");
-if (!shape3) console.log("Unknown shape requested");
-```
 
 ❌ Without Factory (shape-without-factory.ts)
 
@@ -82,11 +71,3 @@ Harder to maintain when new types are added
 
 Increases coupling between client code and implementations
 
-```typescript
-
-const circle = new Circle();
-const square = new Square();
-
-circle.draw();
-square.draw();
-```
