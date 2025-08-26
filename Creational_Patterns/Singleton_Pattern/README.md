@@ -27,12 +27,9 @@ Using the Singleton pattern provides several benefits:
 
 ```vbnet
 singleton-pattern/
-├── src/
-│ ├── logger-singleton.ts # Logger using Singleton Pattern
-│ └── logger-without-singleton.ts # Logger without Singleton
-├── tsconfig.json # TypeScript config file
-├── package.json # Node project config
-└── README.md # Project documentation
+│── Logger.ts       # Singleton class
+│── client.ts       # Client code
+│── tsconfig.json
 
 ```
 ## How to Run
@@ -48,7 +45,9 @@ npx tsc
  Step 3: Run the compiled JavaScript files
 
 ```typescript
+cd Creational_Patterns\Singleton_Pattern\with-singleton
 node logger-singleton.js
+cd Creational_Patterns\Singleton_Pattern\without-singleton
 node logger-without-singleton.js
 ```
 
