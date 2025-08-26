@@ -28,8 +28,8 @@ Using the Factory pattern provides several benefits:
 ```vbnet
 factory-pattern/
 ├── src/
-│   ├── shape-factory-pattern.ts     # Shapes created via Factory Pattern
-│   └── shape-without-factory.ts     # Shapes created without Factory
+│   ├── with-factory     # Shapes created via Factory Pattern
+│   └── without-factory.ts     # Shapes created without Factory
 ├── tsconfig.json                    # TypeScript config file
 ├── package.json                     # Node project config
 └── README.md                        # Project documentation
@@ -48,8 +48,10 @@ npx tsc
  Step 3: Run the compiled JavaScript files
 
 ```typescript
-node shape-factory.js
-node shape-without-factory.js
+cd Creational_Patterns\Factory_Pattern\with-factory
+node with-factory.js
+cd Creational_Patterns\Factory_Pattern\without-factory
+node without-factory.js
 ```
  ### Comparison: With vs Without Factory
 
