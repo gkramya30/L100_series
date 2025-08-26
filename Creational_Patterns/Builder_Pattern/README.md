@@ -26,12 +26,10 @@ Using the Builder pattern provides several benefits:
 
 ```plaintext
 builder-pattern/
-├── src/
-│   ├── builder-pattern.ts           # Laptop objects created via Builder Pattern
-│   └── without-builder.ts           # Laptop objects created without Builder
-├── tsconfig.json                    # TypeScript config file
-├── package.json                     # Node project config
-└── README.md                        # Project documentation
+│
+├── Laptop.ts
+├── LaptopBuilder.ts
+└── client.ts
 ```
 ## How to Run
 
@@ -46,7 +44,9 @@ npx tsc
  Step 3: Run the compiled JavaScript files
 
 ```typescript
+Creational_Patterns\Builder_Pattern\builder-pattern
 node builder-pattern.js
+Creational_Patterns\Builder_Pattern\without-builder-pattern
 node without-builder.js
 ```
 
