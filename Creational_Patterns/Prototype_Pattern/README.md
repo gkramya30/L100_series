@@ -20,13 +20,12 @@ In this pattern, an object (prototype) provides a method to clone itself, enabli
 ## 3. File Structure (TypeScript)
 
 ```
-/prototype-pattern/
-├── src/
-│ ├── CarWithPrototype.ts # Implementation using Prototype Pattern
-│ └── CarWithoutPrototype.ts # Implementation without using Prototype Pattern
-├── package.json
-├── tsconfig.json
-└── README.md
+prototype-pattern/
+│── prototype.ts         # Prototype interface
+│── employee.ts          # Concrete Prototype (Employee class)
+│── client.ts            # Client code (uses cloning)
+│── tsconfig.json        # TypeScript config (if needed)
+
 ```
 
 ## 4. How to Run
@@ -42,7 +41,9 @@ npx tsc
  Step 3: Run the compiled JavaScript files
 
 ```typescript
+cd Creational_Patterns\Prototype_Pattern\with-prototype
 node with-prototype.js
+cd Creational_Patterns\Prototype_Pattern\without-prototype
 node without-prototype.js
 ```
 
