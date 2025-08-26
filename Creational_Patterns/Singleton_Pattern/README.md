@@ -59,21 +59,11 @@ node logger-without-singleton.js
 - Logging is done through a shared object  
 - Saves memory and promotes centralized control  
 
-```typescript
-const logger1 = SingletonLogger.getInstance();
-const logger2 = SingletonLogger.getInstance();
-
-console.log(logger1 === logger2);
-```
-
 ### ❌ Without Singleton (`logger-without-singleton.ts`)
 
 - Multiple instances are created even if not necessary  
 - Increases memory usage and may cause an inconsistent state  
 
-```typescript
-const loggerA = new Logger("LoggerA");
-const loggerB = new Logger("LoggerB");
 
 console.log(loggerA === loggerB); // false
 
