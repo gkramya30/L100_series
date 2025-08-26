@@ -26,13 +26,26 @@ Using the Abstract Factory pattern provides several benefits:
 ## Project File Structure (TypeScript)
 
 ```plaintext
-abstract-factory-pattern/
-├── src/
-│   ├── with-abstract-factory.ts     # Payment gateways via Abstract Factory
-│   └── without-abstract-factory.ts  # Payment gateways without Abstract Factory
-├── tsconfig.json                    # TypeScript config file
-├── package.json                     # Node project config
-└── README.md                        # Project documentation
+with-abstract-factory/
+│
+├── interfaces/
+│   ├── PaymentProcessor.ts
+│   ├── RefundProcessor.ts
+│   └── PaymentGatewayFactory.ts
+│
+├── paypal/
+│   ├── PayPalPayment.ts
+│   ├── PayPalRefund.ts
+│   └── PayPalFactory.ts
+│
+├── stripe/
+│   ├── StripePayment.ts
+│   ├── StripeRefund.ts
+│   └── StripeFactory.ts
+│
+├── client.ts
+└── tsconfig.json
+
 ```
 ## How to Run
 
@@ -47,8 +60,10 @@ npx tsc
  Step 3: Run the compiled JavaScript files
 
 ```typescript
-node with-abstract-pattern.js
-node without-abstract-pattern.js
+cd Creational_Patterns\AbstractFactory_Pattern\with-abstarct-factory
+node client.js
+cd Creational_Patterns\AbstractFactory_Pattern\without-abstarct-factory
+node client.js
 ```
 ### Comparison: With vs Without Abstract Factory
 
